@@ -17,6 +17,8 @@ Nor these cities
 
 <img src="https://raw.githubusercontent.com/lucidrains/stylegan2-pytorch/master/samples/cities.jpg" width="450" height="auto">
 
+## Setup
+
 Check GPU
 ```bash
 !nvidia-smi
@@ -49,10 +51,12 @@ cd /content/stylegan2-pytorch/stylegan2_pytorch
 %ls
 ```
 
+```bash
 That's it. Sample images will be saved to `results/default` and models will be saved periodically to `models/default`.
 
 To continue training drop .pt model file into /content/stylegan2-pytorch/stylegan2_pytorch/models/sg2_ga
 Edit /content/stylegan2-pytorch/bin/stylegan2_pytorch to change output file size and number of runs etc
+```
 
 ## Advanced Use
 
@@ -228,98 +232,4 @@ By default, the StyleGAN architecture styles a constant learned 4x4 block as it 
 
 ```python
 $ stylegan2_pytorch --data ./data --no-const
-```
-
-
-## Appreciation
-
-Thank you to Matthew Mann for his inspiring [simple port](https://github.com/manicman1999/StyleGAN2-Tensorflow-2.0) for Tensorflow 2.0
-
-## References
-
-```bibtex
-@article{Karras2019stylegan2,
-  title   = {Analyzing and Improving the Image Quality of {StyleGAN}},
-  author  = {Tero Karras and Samuli Laine and Miika Aittala and Janne Hellsten and Jaakko Lehtinen and Timo Aila},
-  journal = {CoRR},
-  volume  = {abs/1912.04958},
-  year    = {2019},
-}
-```
-
-```bibtex
-@misc{zhao2020feature,
-    title   = {Feature Quantization Improves GAN Training},
-    author  = {Yang Zhao and Chunyuan Li and Ping Yu and Jianfeng Gao and Changyou Chen},
-    year    = {2020}
-}
-```
-
-```bibtex
-@misc{chen2020simple,
-    title   = {A Simple Framework for Contrastive Learning of Visual Representations},
-    author  = {Ting Chen and Simon Kornblith and Mohammad Norouzi and Geoffrey Hinton},
-    year    = {2020}
-}
-```
-
-```bibtex
-@article{,
-  title     = {Oxford 102 Flowers},
-  author    = {Nilsback, M-E. and Zisserman, A., 2008},
-  abstract  = {A 102 category dataset consisting of 102 flower categories, commonly occuring in the United Kingdom. Each class consists of 40 to 258 images. The images have large scale, pose and light variations.}
-}
-```
-
-```bibtex
-@article{afifi201911k,
-  title   = {11K Hands: gender recognition and biometric identification using a large dataset of hand images},
-  author  = {Afifi, Mahmoud},
-  journal = {Multimedia Tools and Applications}
-}
-```
-
-```bibtex
-@misc{zhang2018selfattention,
-    title   = {Self-Attention Generative Adversarial Networks},
-    author  = {Han Zhang and Ian Goodfellow and Dimitris Metaxas and Augustus Odena},
-    year    = {2018},
-    eprint  = {1805.08318},
-    archivePrefix = {arXiv}
-}
-```
-
-```bibtex
-@article{shen2019efficient,
-  author    = {Zhuoran Shen and
-               Mingyuan Zhang and
-               Haiyu Zhao and
-               Shuai Yi and
-               Hongsheng Li},
-  title     = {Efficient Attention: Attention with Linear Complexities},
-  journal   = {CoRR},  
-  year      = {2018},
-  url       = {http://arxiv.org/abs/1812.01243},
-}
-```
-
-```bibtex
-@misc{zhao2020image,
-    title  = {Image Augmentations for GAN Training},
-    author = {Zhengli Zhao and Zizhao Zhang and Ting Chen and Sameer Singh and Han Zhang},
-    year   = {2020},
-    eprint = {2006.02595},
-    archivePrefix = {arXiv}
-}
-```
-
-```bibtex
-@misc{karras2020training,
-    title   = {Training Generative Adversarial Networks with Limited Data},
-    author  = {Tero Karras and Miika Aittala and Janne Hellsten and Samuli Laine and Jaakko Lehtinen and Timo Aila},
-    year    = {2020},
-    eprint  = {2006.06676},
-    archivePrefix = {arXiv},
-    primaryClass = {cs.CV}
-}
 ```
