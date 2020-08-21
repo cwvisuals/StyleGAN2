@@ -17,7 +17,7 @@ Nor these cities
 
 <img src="https://raw.githubusercontent.com/lucidrains/stylegan2-pytorch/master/samples/cities.jpg" width="450" height="auto">
 
-## Setup
+## Setup in Colab
 
 Check GPU
 ```bash
