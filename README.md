@@ -23,21 +23,31 @@ Check GPU
 ```
 
 Mount Google drive
+```
 from google.colab import drive
 drive.mount('/content/drive')
+```
 
+```bash
 !pip install torch==1.6.0
 !pip install torchvision
 !pip install stylegan2_pytorch
+```
 
+```bash
 # !git clone https://github.com/lucidrains/stylegan2-pytorch
 !git clone https://github.com/cwvisuals/StyleGAN2
+```
 
+```bash
 cd /content/stylegan2-pytorch
 cd /content/stylegan2-pytorch/stylegan2_pytorch
+```
 
+```bash
 !pwd
 %ls
+```
 
 That's it. Sample images will be saved to `results/default` and models will be saved periodically to `models/default`.
 
