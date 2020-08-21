@@ -17,29 +17,30 @@ Nor these cities
 
 <img src="https://raw.githubusercontent.com/lucidrains/stylegan2-pytorch/master/samples/cities.jpg" width="450" height="auto">
 
+Check GPU
+!nvidia-smi
 
-## Install
+Mount Google drive
+from google.colab import drive
+drive.mount('/content/drive')
 
-You will need a machine with a GPU and CUDA installed. Then pip install the package like this
+!pip install torch==1.6.0
+!pip install torchvision
+!pip install stylegan2_pytorch
 
-```bash
-$ pip install stylegan2_pytorch
-```
+# !git clone https://github.com/lucidrains/stylegan2-pytorch
+!git clone https://github.com/cwvisuals/StyleGAN2
 
-If you are using a windows machine, the following commands reportedly works.
+cd /content/stylegan2-pytorch
+cd /content/stylegan2-pytorch/stylegan2_pytorch
 
-```bash
-$ conda install pytorch torchvision -c python
-$ pip install stylegan2_pytorch
-```
-
-## Use
-
-```bash
-$ stylegan2_pytorch --data /path/to/images
-```
+!pwd
+%ls
 
 That's it. Sample images will be saved to `results/default` and models will be saved periodically to `models/default`.
+
+To continue training drop .pt model file into /content/stylegan2-pytorch/stylegan2_pytorch/models/sg2_ga
+Edit /content/stylegan2-pytorch/bin/stylegan2_pytorch to change output file size and number of runs etc
 
 ## Advanced Use
 
