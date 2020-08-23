@@ -27,7 +27,7 @@ def train_from_folder(
     generate_interpolation = False,
     save_frames = False,
     num_image_tiles = 2,
-    trunc_psi = 0.75,
+    trunc_psi = 0.72,
     fp16 = False,
     cl_reg = False,
     fq_layers = [],
