@@ -90,5 +90,5 @@ def train_from_folder(
         if _ % 50 == 0:
             model.print_log()
 
-if __name__ == "__main__":
+if __name__ == "sg2_ga":
     fire.Fire(train_from_folder)
