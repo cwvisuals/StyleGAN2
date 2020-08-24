@@ -10,7 +10,7 @@ setup(
   author = 'Phil Wang',
   author_email = 'lucidrains@gmail.com',
   url = 'https://github.com/cwvisuals/StyleGAN2',
-  download_url = 'https://github.com/lucidrains/stylegan2-pytorch/archive/v_036.tar.gz',
+  download_url = 'https://github.com/cwvisuals/StyleGAN2/blob/test/stylegan2_pytorch-0.20.1.tar.gz',
   keywords = ['generative adversarial networks', 'artificial intelligence'],
   install_requires=[
       'fire',
