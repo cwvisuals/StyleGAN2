@@ -873,7 +873,7 @@ class Trainer():
         self.av = None
 
     @torch.no_grad()
-    def evaluate(self, num = 0, num_image_tiles = 8, trunc = 1.0):
+    def evaluate(self, num = 0, num_image_tiles = 1, trunc = 0.5):
         self.GAN.eval()
         ext = 'jpg' if not self.transparent else 'png'
         num_rows = num_image_tiles
@@ -918,7 +918,7 @@ class Trainer():
         torchvision.utils.save_image(generated_images, str(self.results_dir / self.name / f'{str(num)}-mr.{ext}'), nrow=num_rows)
 
     @torch.no_grad()
-    def generate_truncated(self, S, G, style, noi, trunc_psi = 0.75, num_image_tiles = 8):
+    def generate_truncated(self, S, G, style, noi, trunc_psi = 0.5, num_image_tiles = 1):
         latent_dim = G.latent_dim
 
         if self.av is None:
@@ -939,7 +939,7 @@ class Trainer():
         return generated_images.clamp_(0., 1.)
 
     @torch.no_grad()
-    def generate_interpolation(self, num = 0, num_image_tiles = 8, trunc = 1.0, save_frames = False):
+    def generate_interpolation(self, num = 0, num_image_tiles = 1, trunc = 0.5, save_frames = False):
         self.GAN.eval()
         ext = 'jpg' if not self.transparent else 'png'
         num_rows = num_image_tiles
